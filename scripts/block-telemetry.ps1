@@ -142,7 +142,6 @@ $domains = @(
     "client.wns.windows.com"
     "wdcp.microsoft.com"
     "dns.msftncsi.com"
-    "storeedgefd.dsx.mp.microsoft.com"
     "wdcpalt.microsoft.com"
     "settings-ssl.xboxlive.com"
     "settings-ssl.xboxlive.com-c.edgekey.net"
@@ -171,7 +170,6 @@ $domains = @(
     "pagead46.l.doubleclick.net"
     "hubspot.net.edgekey.net"
     "insiderppe.cloudapp.net" # Feedback-Hub
-    "livetileedge.dsx.mp.microsoft.com"
     
 
     # extra
@@ -186,14 +184,6 @@ $domains = @(
     "watson.telemetry.microsoft.com.nsatc.net"
     "wes.df.telemetry.microsoft.com"
     "m.hotmail.com"
-
-    # can cause issues with Skype (#79)
-    "apps.skype.com"
-    "c.msn.com"
-    "login.live.com"
-    "pricelist.skype.com"
-    "s.gateway.messenger.live.com"
-    "ui.skype.com"
 )
 Write-Output "" | Out-File -Encoding ASCII -Append $hosts_file
 foreach ($domain in $domains) {
